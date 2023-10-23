@@ -12,6 +12,7 @@ export default {
       <div class="wave" id="wave3"></div>
       <div class="wave" id="wave4"></div>
     </div>
+    <slot></slot>
   </footer>
 </template>
 
@@ -80,7 +81,7 @@ export default {
 .footer {
   position: relative;
   background: #6BB8FF;
-  min-height: 300px;
+  min-height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;

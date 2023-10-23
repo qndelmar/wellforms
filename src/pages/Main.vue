@@ -37,9 +37,10 @@ export default {
     </p>
   </section>
   <section class="btns_section">
-    <icon-btn :buttons="btns" width="100"></icon-btn>
+    <icon-btn :buttons="btns"></icon-btn>
   </section>
-  <waves></waves>
+  <waves>
+  </waves>
 </template>
 
 <style scoped>
@@ -47,6 +48,9 @@ export default {
       font-family: ABeeZee, sans-serif;
       font-size: 76px;
       text-shadow: 0 0 2px black;
+    }
+    .btnn{
+      background: red !important;
     }
     .main_section{
       display: flex;

@@ -12,7 +12,8 @@ export default {
 
 <template>
   <button class="btn" v-for="btn in buttons" @click="btn.fn">
-    <span>{{btn.icon}}</span>
+    <span v-if="btn.icon">{{btn.icon}}</span>
+    <img v-if="btn.image" :src="btn.image" alt="Icon Image">
     <span>{{btn.linkText}}</span>
   </button>
 </template>
@@ -29,5 +30,8 @@ export default {
     font-family: ABeeZee, sans-serif;
     font-weight: 500;
     font-size: 17px;
+  }
+  .btn:hover{
+    cursor: pointer;
   }
 </style>

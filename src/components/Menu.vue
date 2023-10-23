@@ -1,11 +1,11 @@
 <script>
 export default {
-  name: "menu"
+  name: "app-menu"
 }
 </script>
 
 <template >
-  <menu class="app_menu">
+  <menu class="app_menu" v-if="this.$route.fullPath!=='/login'">
     <router-link to="/about" class="link">About</router-link>
     <router-link to="/support" class="link">Support</router-link>
     <a href="https://github.com/qndelmar/wellforms" class="link">GitHub</a>

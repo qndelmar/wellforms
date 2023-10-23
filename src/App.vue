@@ -1,11 +1,12 @@
 <script setup>
 
-import Menu from "@/components/Menu.vue";
+import AppMenu from "@/components/Menu.vue";
+
 </script>
 
 <template>
   <div class="app">
-    <Menu></Menu>
+    <app-menu></app-menu>
     <router-view></router-view>
   </div>
 </template>
