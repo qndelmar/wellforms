@@ -9,7 +9,7 @@ export default {
     <router-link to="/about" class="link">About</router-link>
     <router-link to="/support" class="link">Support</router-link>
     <a href="https://github.com/qndelmar/wellforms" class="link">GitHub</a>
-    <div class="">
+    <div class="" role="button">
       <router-link to="/login" class="link login_btn">Get started</router-link>
     </div>
   </menu>

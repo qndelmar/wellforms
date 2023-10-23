@@ -5,8 +5,7 @@ export default {
     buttons: {
       type: Array,
       required: true
-    },
-    width: Number
+    }
   }
 }
 </script>

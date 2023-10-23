@@ -1,11 +1,12 @@
 <script>
 
 import IconBtn from "@/components/ButtonWithIcon.vue";
+import Waves from "../components/Waves.vue";
 
 // noinspection JSUnresolvedReference
 export default {
   name: "Main",
-  components: {IconBtn},
+  components: {Waves, IconBtn},
   data(){
     return {
       btns: [{
@@ -38,6 +39,7 @@ export default {
   <section class="btns_section">
     <icon-btn :buttons="btns" width="100"></icon-btn>
   </section>
+  <waves></waves>
 </template>
 
 <style scoped>
